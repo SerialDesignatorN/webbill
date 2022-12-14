@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'tf2';
+    src: url('../assets/TF2.ttf');
+}
+:root {
+    --main-color: #1d1d1d;
+    --main-pushbutton: #424242;
+    --main-hover: #2e2e2e;
+    --main-active-disabled: #3f3f3f;
+    --text-color: #ececec;
+}
+* {
+    margin: 0;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    overflow: hidden;
+    user-select: none;
+}
+h1 {
+    font-family: 'tf2';
+}
+input[type=text] {
+    -webkit-appearance: none;
+    background-color: var(--main-color);
+    border: none;
+    font-family: 'tf2';
+    font-size: 24pt;
+    padding: 5px;
+    color: var(--text-color);
+}
+input[type=text]:hover {
+    background-color: var(--main-hover);
+}
+p, span {
+    font-size: 17pt;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.sub-head {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.button {
+    -webkit-appearance: none;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    background-color: var(--main-pushbutton);
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-left: 15px ;
+    box-shadow: 0px 10px 0px 0px var(--main-hover);
+}
+a {
+    text-decoration: none;
+}
+.button span {
+    margin-right: 10px;
+}
+.button:hover {
+    position: relative;
+    top: 4px;
+    box-shadow: 0px 6px 0px 0px var(--main-hover);
+  }
+  .button:active {
+    position: relative;
+    top: 9px;
+    box-shadow: 0px 1px 0px 0px var(--main-hover);
+  }
+  .side {
+    background-color: var(--main-active-disabled);
+    padding-top: 5px;
+    width: 90px;
+    float: left;
+    height: calc(100vh - 80px);
+    display: inline-block;
+    overflow-y: scroll;
+  }
+  .side .button {
+    display: block !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 10pt !important;
+    width: 28px;
+    height: 28px;
+  }
+  .side .button span {
+    margin-right: 0px !important;
+  }
+  .gc-code {
+    display: inline-block;
+    height: 100vh;
+  }
+  .bar3 {
+    display: inline-block;
+  }
+  .bar3 {background-color: #1d1d1d; float:right; width: 77%; height: calc(100vh - 55px);}
+  textarea {height: 90.9%; width: 55%; resize: none; padding: 10px; font-family: 'Roboto Mono', monospace; font-size:12pt; background-color: #1d1d1d; color: white; border: none; margin-left: -21.3%; outline: none;}
+  .iframe {
+    float: right;
+  }
