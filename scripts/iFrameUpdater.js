@@ -10,9 +10,6 @@ zeankun.dev
 let label = document.querySelector('[aria-label="run-button"]');
 let msg = document.getElementById('msg');
 let logic = false;
-setInterval(() => {
-    console.log(logic);
-}, 10)
 function startWorker(){
     if (logic == false) {
         logic = true;
